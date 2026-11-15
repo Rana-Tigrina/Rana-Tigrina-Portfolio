@@ -1,0 +1,29 @@
+{
+  "name": "kuan",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "node -e \"require('fs').cpSync('node_modules/@mediapipe/tasks-vision/wasm','public/mediapipe',{recursive:true})\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@mediapipe/tasks-vision": "^1.2.3",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
+    "gray-matter": "^4.0.3",
+    "next": "^16.4.6",
+    "postprocessing": "^6.39.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2"
+  }
+}
